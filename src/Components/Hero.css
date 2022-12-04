@@ -9,6 +9,7 @@
         width: 100%;
         object-fit: cover;
         filter: brightness(50%);
+        background-color: var(--purple);
     }
     .image-content{
         top: 23%;
