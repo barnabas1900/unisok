@@ -2,14 +2,14 @@
    
     .hero-image{
         position: relative;
-        background-color: var(--purple);
+     
     }
     .hero-image img{
         height: 100vh;
         width: 100%;
         object-fit: cover;
         filter: brightness(50%);
-        background-color: var(--purple);
+
     }
     .image-content{
         top: 23%;
@@ -212,7 +212,7 @@
      
     .hero-image{
         position: relative;
-        background-color: red;
+     
     }
     .hero-image img{
         height: 100vh;
