@@ -3,6 +3,11 @@
         display: none;
     }
 
+    .mobile-tablet-link:hover, .link:hover{
+
+        color: white;
+    }
+
     .mobile-tablet-header{
         background: var(--purple);
         height: 60px;
@@ -175,7 +180,10 @@
     .desktop-header{
         display: none;
     }
+    .mobile-tablet-link:hover, .link:hover{
 
+        color: white;
+    }
     .mobile-tablet-header{
         background: var(--purple);
         height: 70px;
@@ -327,6 +335,11 @@
 @media only screen and (min-width: 575px){
     .desktop-header{
         display: none;
+    }
+
+    .mobile-tablet-link:hover a, .link:hover{
+
+        color: white;
     }
     .mobile-tablet-header{
         background: var(--purple);
