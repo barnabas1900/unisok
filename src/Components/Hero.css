@@ -2,6 +2,7 @@
    
     .hero-image{
         position: relative;
+        background-color: var(--purple);
     }
     .hero-image img{
         height: 100vh;
