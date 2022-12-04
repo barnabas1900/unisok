@@ -1,24 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import Home from "./pages/Home";
+import NewsPage from "../src/pages/NewsPage";
+import NewsArticle from "../src/pages/NewsArticle";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import ErrorPage from "../src/Components/ErrorPage";
+import { useState } from "react";
 
 function App() {
+  const [loading, setLoading] = useState(true);
+  const spinner = document.getElementById("spinner");
+
+  if (loading) {
+    setTimeout(() => {
+      spinner.style.display = "none";
+      setLoading(false);
+    }, 2000);
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    !loading && (
+      <Router>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/newspage" element={<NewsPage />} />
+          <Route path="/newsarticle" element={<NewsArticle />} />
+          <Route path="*" element={<ErrorPage />} />
+        </Routes>
+      </Router>
+    )
   );
 }
 

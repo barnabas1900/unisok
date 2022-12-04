@@ -1,0 +1,248 @@
+@media only screen and (max-width: 575px){
+    .academic-image{
+        display: none;
+    }
+    .academic-container{
+        padding-top: 100px;
+        padding-left: 20px;
+        padding-right: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        padding-bottom: 50px;
+    }
+
+    .academics-card{
+        display: grid;
+        grid-gap: 20px;
+    }
+    .academic-header{
+     
+        text-align: center;
+    }
+
+    .academic-article{
+        background-color: white;
+        box-shadow:  0px 4px 18px -8px rgba(0, 0, 0, 0.25);
+        padding: 20px;
+        cursor: pointer;
+    }
+    .academic-article:hover{
+        box-shadow: var(--card-hover);
+    }
+
+    .academic-article figure{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .academic-article-content{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .academics-cta{
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .academic-article img{
+        transition: all 0.5s ease;
+        transform: translateX(1);
+    }
+
+    .academic-article:hover img{
+        transition: all 0.5s ease;
+        transform: translateX(15%);
+    }
+
+    .academics-cta p{
+        color: var(--purple);
+    }
+
+    .seven-schools-div{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .seven-schools-links{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .seven-schools-links a{
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--dark);
+    padding: 10px;
+
+    }
+
+    .seven-schools-links a:hover{
+        transition: all ease;
+        background-color: #b0f089;
+    }
+
+    .green-button{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        cursor: pointer;
+    }
+
+    .green-button:hover{
+        background-color: rgb(94, 234, 115);
+    }
+
+  
+
+}
+
+@media only screen and (min-width: 575px){
+
+    .academic-container{
+        padding-top: 100px;
+        padding-left: 20px;
+        padding-right: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        padding-bottom: 50px;
+    }
+
+    .academics-card{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+    }
+    .academic-header{
+     
+        text-align: center;
+    }
+
+    .academic-article{
+        padding: 20px;
+        cursor: pointer;
+        width: 100%;
+    }
+
+    .academic-article-content{
+        padding: 20px;
+        padding-left: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+   
+
+    .academic-article figure{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .academics-cta{
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        border-bottom: 3px solid var(--green);
+        width: max-content;
+    }
+    .academic-article .academic-image {
+      width: 100%;
+    }
+
+    .academics-cta .ctaArrow{
+        transition: all 0.5s ease;
+        transform: translateX(1);
+
+    }
+
+    .academics-cta:hover .ctaArrow{
+        transition: all 0.5s ease;
+        transform: translateX(15%);
+    }
+
+    .academics-cta p{
+        color: var(--purple);
+    }
+
+    .seven-schools-div{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .seven-schools-links{
+        display: block;
+        word-break: break-all;
+    }
+
+  
+
+    .seven-schools-links a{
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--dark);
+    padding: 10px;
+    border-radius: 4px;
+    white-space: nowrap;
+    }
+
+    .seven-schools-links a:hover{
+        transition: all ease;
+        background-color: #b0f089;
+    }
+
+    .green-button{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        cursor: pointer;
+    }
+
+    .green-button:hover{
+        background-color: rgb(94, 234, 115);
+    }
+
+    
+}
+
+@media only screen and(min-width: 750px){
+    .seven-schools-links{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+}
+
+@media only screen and (min-width: 1024px){
+ 
+    
+    .academics-card{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px;
+    }
+
+    .seven-schools-links{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+}

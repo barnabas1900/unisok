@@ -1,0 +1,211 @@
+@media only screen and (max-width: 575px){
+  
+    .Joe-Image-Container{
+        position: relative;
+
+    }
+
+    .Joe-background-image{
+        overflow: hidden;
+    }
+
+    .Joe-background-image{
+        filter: blur(0px);
+        transform: scale(1);
+        transition: all 3s ease;
+    }
+ 
+
+    .blur{
+        filter: blur(18px);
+        transform: scale(1.05);
+        transition: all 3s ease;
+    }
+
+    .Joe-background-image-content{
+        position: absolute;
+        bottom: 12%;
+        text-align: center;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        color: white;
+        opacity: 0;
+        transition: all 2s ease-in-out;
+    }
+
+   
+    .opacity{
+        transition: all 2s ease-in-out;
+        opacity: 1;
+        text-shadow:0 0 3em black;
+    }
+    .Joe-background-image-content .passport-image {
+      width: 35%;
+    }
+
+    .Joe-content-name{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .Joe-content-cta{
+        display: flex;
+        align-items: center;
+        gap:5px;
+        cursor: pointer;
+        border-bottom: 2px solid white;
+  
+    }
+    .Joe-content-cta p{
+        color: white;
+        transition: all 0.5s ease;
+    }
+
+    .Joe-content-cta:hover img{
+        transition: all 0.8s ease;
+        transform: translateX(25%);
+    }
+
+}
+
+@media only screen and (min-width: 575px){
+    .Joe-Image-Container{
+        position: relative;
+        margin-top: 100px;
+
+    }
+
+    .JoeImage-div, .Joe-background-image{
+        overflow: hidden;
+    }
+
+    .Joe-background-image{
+        filter: blur(0px);
+        transform: scale(1);
+        transition: all 3s ease;
+    }
+
+    .blur{
+        filter: blur(18px);
+        transform: scale(1.05);
+        transition: all 3s ease;
+    }
+
+    .Joe-background-image-content{
+        position: absolute;
+        bottom: 15%;
+        text-align: center;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        color: white;
+        opacity: 0;
+        transition: all 2s ease-in-out;
+    }
+
+   
+    .opacity{
+        transition: all 2s ease-in-out;
+        opacity: 1;
+        text-shadow:0 0 3em black;
+    }
+    .Joe-background-image-content .passport-image {
+      width: 20%;
+    }
+
+    .Joe-content-name{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .Joe-content-cta{
+        display: flex;
+        align-items: center;
+        gap:5px;
+        cursor: pointer;
+        border-bottom: 2px solid white;
+  
+    }
+    .Joe-content-cta p{
+        color: white;
+        transition: all 0.5s ease;
+    }
+
+    .Joe-content-cta:hover img{
+        transition: all 0.8s ease;
+        transform: translateX(25%);
+    }
+    
+}
+
+@media only screen and (min-width: 1024px){
+    .Joe-background-image-content{
+        position: absolute;
+        bottom: 10%;
+        top:10%;
+        left: 10%;
+        right: 10%;
+        text-align: center;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        color: white;
+        opacity: 0;
+        transition: all 2s ease-in-out;
+    }
+
+    .opacity{
+        transition: all 2s ease-in-out;
+        opacity: 1;
+        text-shadow:0 0 3em black;
+    }
+    
+    .Joe-background-image-content .passport-image {
+        width: 20%;
+      }
+
+      
+    .JoeImage-div, .Joe-background-image{
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .Joe-Image{
+        object-fit: contain;
+        width: 100%;
+
+    }
+
+      .Joe-background-image{
+        filter: blur(0px);
+        transform: scale(1);
+        transition: all 3s ease;
+        text-align: center;
+        position: relative;
+    }
+
+    .blur{
+        filter: blur(18px);
+        transform: scale(1.05);
+        transition: all 3s ease;
+    }
+
+    
+    .Joe-background-image img{
+        width: 100%;
+    }
+}

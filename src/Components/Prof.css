@@ -1,0 +1,213 @@
+@media only screen and (max-width: 575px){
+  
+    .Prof-image-container{
+        position: relative;
+    }
+
+    .Prof-background-image{
+        overflow: hidden;
+    }
+
+    .Prof-background-image{
+        filter: blur(0px);
+        transform: scale(1);
+        transition: all 3s ease;
+    }
+
+    .blur{
+        filter: blur(18px);
+        transform: scale(1.05);
+        transition: all 3s ease;
+    }
+
+    .Prof-background-image-content{
+        position: absolute;
+        bottom: 12%;
+        text-align: center;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        color: white;
+        opacity: 0;
+        transition: all 2s ease-in-out;
+    }
+
+   
+    .opacity{
+        transition: all 2s ease-in-out;
+        opacity: 1;
+        text-shadow:0 0 3em black;
+    }
+    .Prof-background-image-content .passport-image {
+      width: 35%;
+    }
+
+    .Prof-content-name{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .Prof-content-cta{
+        display: flex;
+        align-items: center;
+        gap:5px;
+        cursor: pointer;
+        border-bottom: 2px solid white;
+  
+    }
+    .Prof-content-cta p{
+        color: white;
+        transition: all 0.5s ease;
+    }
+
+    .Prof-content-cta:hover img{
+        transition: all 0.8s ease;
+        transform: translateX(25%);
+    }
+
+}
+
+@media only screen and (min-width: 575px){
+ 
+
+    .Prof-image-container{
+        position: relative;
+        margin-top: 100px;
+    }
+
+  .Prof-background-image{
+        overflow: hidden;
+    }
+
+    .Prof-background-image{
+        filter: blur(0px);
+        transform: scale(1);
+        transition: all 3s ease;
+    }
+
+    .blur{
+        filter: blur(18px);
+        transform: scale(1.05);
+        transition: all 3s ease;
+    }
+
+    .Prof-background-image-content{
+        position: absolute;
+        bottom: 15%;
+        text-align: center;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        color: white;
+        opacity: 0;
+        transition: all 2s ease-in-out;
+    }
+
+   
+    .opacity{
+        transition: all 2s ease-in-out;
+        opacity: 1;
+        text-shadow:0 0 3em black;
+    }
+    .Prof-background-image-content .passport-image {
+      width: 20%;
+    }
+
+    .Prof-content-name{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .Prof-content-cta{
+        display: flex;
+        align-items: center;
+        gap:5px;
+        cursor: pointer;
+        border-bottom: 2px solid white;
+  
+    }
+    .Prof-content-cta p{
+        color: white;
+        transition: all 0.5s ease;
+    }
+
+    .Prof-content-cta:hover img{
+        transition: all 0.8s ease;
+        transform: translateX(25%);
+    }
+    
+}
+
+@media only screen and (min-width: 1024px){
+    .Prof-image-container{
+        position: relative;
+    }
+    .Prof-background-image-content{
+        position: absolute;
+        bottom: 10%;
+        top:10%;
+        left: 10%;
+        right: 10%;
+        text-align: center;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        color: white;
+        opacity: 0;
+        transition: all 2s ease-in-out;
+    }
+
+    .opacity{
+        transition: all 2s ease-in-out;
+        opacity: 1;
+        text-shadow:0 0 3em black;
+    }
+    
+    .Prof-background-image-content .passport-image {
+        width: 20%;
+      }
+
+      
+    .Prof-background-image{
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .Prof-Image{
+        object-fit: contain;
+        width: 100%;
+
+    }
+
+      .Prof-background-image{
+        filter: blur(0px);
+        transform: scale(1);
+        transition: all 3s ease;
+        text-align: center;
+        position: relative;
+    }
+
+    .blur{
+        filter: blur(18px);
+        transform: scale(1.05);
+        transition: all 3s ease;
+    }
+
+    
+    .Prof-background-image img{
+        width: 100%;
+    }
+}

@@ -1,0 +1,201 @@
+@media only screen and (max-width: 575px){
+
+    .bulletin-image, .bulletin-cta, .first-logo{
+        display: none;
+    }
+    .bulletin-container{
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 100px;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        padding-bottom: 50px;
+    }
+
+    .bulletin-hr{
+        width: 118px;
+        height: 3px;
+        background-color: var(--green);
+        border: none;
+    }
+
+    .bulletin-header{
+        text-align: center;
+    }
+    .bulletin-cards{
+        display: grid;
+        grid-gap: 20px;
+    }
+    .bulletin-article{
+        background-color: white;
+        box-shadow: 0px 4px 18px -8px rgba(0, 0, 0, 0.25);
+        cursor: pointer;
+        padding: 20px;
+    }
+
+    .bulletin-article:hover{
+        box-shadow: var(--card-hover);
+    }
+
+    .bulletin-figure{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    .bulletin-card-content{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .logo-logoText{
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .bulletin-issue{
+        font-weight: 700;
+    }
+
+    .bulletin-button {
+      cursor:pointer;
+      border: none;
+    }
+
+    .bulletin-button:hover{
+        background-color: var(--hover);
+    }
+
+}
+
+@media only screen and (min-width: 575px){
+  
+    .bulletin-container{
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 100px;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        padding-bottom: 50px;
+    }
+
+    .bulletin-hr{
+        width: 118px;
+        height: 3px;
+        background-color: var(--green);
+        border: none;
+    }
+
+    .bulletin-header{
+        text-align: center;
+    }
+    .bulletin-cards{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+    }
+    .bulletin-article{
+        background-color: white;
+        box-shadow: 0px 4px 18px -8px rgba(0, 0, 0, 0.25);
+        cursor: pointer;
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+    }
+
+        .bulletin-article:hover{
+        box-shadow: var(--card-hover);
+    }
+
+    .bulletin-article .bulletin-image{
+        transition: all 0.5s ease-in;
+        transform: scale(1);
+    }
+    .bulletin-article:hover .bulletin-image{
+        transition: all 0.5s ease-in;
+        transform: scale(1.05);
+    }
+  
+    .bulletin-image-div{
+        overflow: hidden;
+    }
+    .bulletin-image-div img{
+        width: 100%;
+        filter: brightness(50%);
+    }
+
+    .bulletin-content{
+        position: absolute;
+        padding: 20px;
+        color: white;
+    }
+
+    .bulletin-card-content{
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .bulletin-cta{
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .bulletin-cta:hover img{
+        transition: all 0.5s ease-in;
+        transform: translateX(15%);
+    }
+
+    .bulletin-image{
+        width: 100%;
+        padding: 0;
+    }
+
+
+
+    .bulletin-figure{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .logo-logoText{
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .bulletin-issue{
+        font-weight: 700;
+    }
+    
+    .bulletin-button:hover{
+       
+        background-color: var(--hover);
+        border: none;
+        cursor: pointer;
+    }
+}
+@media only screen and (min-width: 800px){
+    .bulletin-cards{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px;
+    }
+    
+}
+@media only screen and (min-width: 1024px){
+    .bulletin-cards{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 20px;
+    }
+    
+}
