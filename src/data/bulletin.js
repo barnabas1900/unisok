@@ -13,7 +13,7 @@ const data = [
   },
   {
     id: 2,
-    image: require("../images/udus2.png"),
+    image: require("../images/udus2.jpg"),
     udus: require("../icons/udus.png"),
     category: "NEWS BULLETIN",
     issue: "NO.200 ISSUE",
@@ -25,7 +25,7 @@ const data = [
   },
   {
     id: 3,
-    image: require("../images/udus3.png"),
+    image: require("../images/udus3.jpg"),
     udus: require("../icons/udus.png"),
     category: "NEWS BULLETIN",
     issue: "NO.200 ISSUE",
@@ -37,7 +37,7 @@ const data = [
   },
   {
     id: 4,
-    image: require("../images/udus4.png"),
+    image: require("../images/udus4.jpg"),
     udus: require("../icons/udus.png"),
     category: "NEWS BULLETIN",
     issue: "NO.200 ISSUE",
