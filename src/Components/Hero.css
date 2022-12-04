@@ -212,7 +212,7 @@
      
     .hero-image{
         position: relative;
-        background-color: var(--purple);
+        background-color: red;
     }
     .hero-image img{
         height: 100vh;
@@ -222,6 +222,7 @@
         position: relative;
         top: -250px;
         z-index: -1;
+        background-color: red;
     }
 
     .image-content{
