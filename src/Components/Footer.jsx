@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "./Footer.css";
-import uduLogo from "../icons/uduLogo.svg";
-import udus from "../icons/udus.svg";
+import logo from "../icons/logo.svg";
 import data from "../data/footer";
 import { Link } from "react-router-dom";
 
@@ -12,8 +11,7 @@ const Footer = () => {
       <section className="footer-section f-c">
         <Link to="/">
           <div className="footer-logo">
-            <img src={uduLogo} alt="" />
-            <img src={udus} alt="" />
+            <img src={logo} alt="" />
           </div>
         </Link>
 

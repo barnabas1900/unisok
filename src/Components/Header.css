@@ -1,15 +1,18 @@
-@media only screen and (max-width: 575px){
+@media only screen and (max-width: 420px){
     .desktop-header{
         display: none;
     }
+
     .mobile-tablet-header{
         background: var(--purple);
-        height: 70px;
+        height: 60px;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding-left: 20px;
-        position: relative;
+        position: fixed;
+        width: 100%;
+        z-index: 20;
+        box-shadow: var(--card-hover);
     }
     .mobile-tablet-logo{
         display: flex;
@@ -17,16 +20,186 @@
         justify-content: center;
         gap: 5px;
         cursor: pointer;
-    }
-
-    .mobile-tablet-logo img{
-        width: 60px;
+        transform: scale(0.7);
     }
 
     .mobile-tablet-search-hamburger{
         display: flex;
         align-items: center;
-        gap: 10px;
+        flex-direction: column;
+        padding-top: 70px;
+    }
+    .mobile-tablet-search-div,  .mobile-tablet-hamburger-div{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        cursor: pointer;
+    }
+    .mobile-tablet-search-div{
+        padding-left: 20px;
+        padding-top: 18px;
+        padding-bottom: 18px;
+        padding-right: 20px;
+        margin-top: -10px;
+    }
+
+    
+    .mobile-tablet-hamburger-div{
+        padding-left: 23px;
+        padding-top: 18px;
+        padding-bottom: 18px;
+        padding-right: 25px;
+        background-color: var(--purple);
+   
+        
+    }
+
+    .mobile-tablet-search-div:hover,  .mobile-tablet-hamburger-div:hover{
+        background-color: var(--hover);
+    }
+
+    .mobile-tablet-search-div p,.mobile-tablet-hamburger-div p{
+        font-weight: 800;
+        font-size: 14px;
+        color: white;
+    }
+
+    .mobile-tablet-hamburger-div img{
+        width: 24px;
+    }
+
+    .mobile-tablet-dropdown{
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        position: absolute;
+        top: 60px;
+        z-index: 20;
+        width: 100%;
+    }
+
+    .mobile-tablet-link{
+        border: none;
+        outline: none;
+    }
+
+  
+
+    .mobile-tablet-upper-dropdown{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        background-color: var(--spring-wood);
+    }
+    .mobile-tablet-upper-dropdown a{
+        color: black;
+        white-space: nowrap;
+        text-align: center;
+        border: 1px solid black;
+        padding: 20px;
+        box-sizing: border-box;
+        font-weight: 400;
+    }
+
+    .mobile-tablet-upper-dropdown a:hover{
+        background-color: rgba(0, 0, 0, 0.7);
+        color: white;
+    }
+
+    .mobile-tablet-lower-dropdown{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 9);
+        align-items: center;
+        gap: 5px;
+        padding-bottom: 30px;
+        padding-top: 30px;
+        box-sizing: border-box;
+    }
+
+    .mobile-tablet-lower-dropdown p{
+        color: white;
+        padding-bottom: 20px;
+        text-align: center;
+    }
+
+    .lower-dropdown-nav{
+        display: block;
+        justify-content: center;
+        gap: 5px;
+        text-align: center;
+        word-break: break-all;
+    }
+
+    .mobile-tablet-link:hover a{
+        color: white;
+    }
+    .link:hover{
+        color: white;
+    }
+
+    .lower-dropdown-nav a{
+        padding: 10px;
+        font-size: 13px;
+        border-radius: 4px;
+        white-space: nowrap;
+    }
+    .lower-dropdown-nav a:hover{
+
+        background-color: whitesmoke;
+        color: black;
+    }
+
+    
+
+    .lower-dropdown-button{
+        background-color: var(--purple);
+        border: none;
+        outline: none;
+        color: white;
+        font-weight: 600;
+        padding: 15px;
+        border-radius: 4px;
+        margin-top: 50px;
+        cursor: pointer;
+    }
+
+    .lower-dropdown-button:hover{
+        background-color: rgb(51, 9, 54);
+    }
+}
+
+@media only screen and (min-width: 420px){
+    .desktop-header{
+        display: none;
+    }
+
+    .mobile-tablet-header{
+        background: var(--purple);
+        height: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: fixed;
+        width: 100%;
+        z-index: 20;
+        box-shadow: var(--card-hover);
+    }
+    .mobile-tablet-logo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        cursor: pointer;
+        transform: scale(0.7);
+    }
+
+    .mobile-tablet-search-hamburger{
+        display: flex;
+        align-items: center;
+        gap: 1px;
     }
     .mobile-tablet-search-div,  .mobile-tablet-hamburger-div{
         display: flex;
@@ -36,8 +209,9 @@
         cursor: pointer;
         padding-top: 22px;
         padding-bottom: 24px;
-        padding-left: 12px;
-        padding-right: 12px;
+        padding-right: 20px;
+        padding-left: 20px;
+        
     }
 
     .mobile-tablet-search-div:hover,  .mobile-tablet-hamburger-div:hover{
@@ -46,11 +220,15 @@
 
     .mobile-tablet-search-div p,.mobile-tablet-hamburger-div p{
         font-weight: 800;
-        font-size: 16px;
+        font-size: 14px;
         color: white;
     }
 
-    .mobile-tablet-hamburger-div img, .mobile-tablet-hamburger-div img{
+    .mobile-tablet-hamburger-div img{
+        width: 20px;
+    }
+
+    .mobile-tablet-hamburger-div img{
         width: 24px;
     }
 
@@ -64,6 +242,12 @@
         width: 100%;
     }
 
+    .mobile-tablet-link{
+        border: none;
+        outline: none;
+    }
+
+  
 
     .mobile-tablet-upper-dropdown{
         display: grid;
@@ -75,7 +259,7 @@
         color: black;
         white-space: nowrap;
         text-align: center;
-        border: 2px solid black;
+        border: 1px solid black;
         padding: 20px;
         box-sizing: border-box;
         font-weight: 400;
@@ -151,7 +335,11 @@
         align-items: center;
         justify-content: space-between;
         padding-left: 20px;
-        position: relative;
+        padding-right: 20px;
+        position: fixed;
+        z-index: 20;
+        width: 100%;
+        box-shadow: var(--card-hover);
     }
     .mobile-tablet-logo{
         display: flex;
@@ -159,18 +347,19 @@
         justify-content: center;
         gap: 5px;
         cursor: pointer;
+        transform: scale(1);
     }
 
-    .mobile-tablet-logo img{
-        width: 60px;
-    }
+   
 
     .mobile-tablet-search-hamburger{
         display: flex;
         align-items: center;
+        justify-content: space-between;
         gap: 10px;
+        padding-right: 20px;
     }
-    .mobile-tablet-search-div,  .mobile-tablet-hamburger-div{
+    .mobile-tablet-search-div, .mobile-tablet-hamburger-div{
         display: flex;
         align-items: center;
         justify-content: center;
@@ -178,8 +367,8 @@
         cursor: pointer;
         padding-top: 22px;
         padding-bottom: 24px;
-        padding-left: 12px;
-        padding-right: 12px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
     .mobile-tablet-search-div:hover,  .mobile-tablet-hamburger-div:hover{
@@ -226,6 +415,10 @@
     .mobile-tablet-upper-dropdown a:hover{
         background-color: rgba(0, 0, 0, 0.7);
         color: white;
+    }
+
+    .mobile-news-link{
+        border: none;
     }
 
     .mobile-tablet-lower-dropdown{
@@ -308,6 +501,10 @@
         padding-right: 20px;
     }
 
+    .desktop-logo img{
+        width: 134.47px;
+        height: 48px;
+    }
     
  
     .desktop-logo-uppernav{
@@ -321,9 +518,7 @@
         align-items: center;
         gap: 10px;
     }
-    .desktop-logo img{
-        width: 90px;
-    }
+   
     .upper-nav {
       display: flex;
       align-items: center;

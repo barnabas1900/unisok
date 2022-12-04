@@ -12,14 +12,14 @@
     .Joe-background-image{
         filter: blur(0px);
         transform: scale(1);
-        transition: all 3s ease;
+        transition: all 0.5s ease;
     }
  
 
     .blur{
-        filter: blur(18px);
+        filter: blur(10px);
         transform: scale(1.05);
-        transition: all 3s ease;
+        transition: all 0.5s ease;
     }
 
     .Joe-background-image-content{
@@ -34,12 +34,12 @@
         gap: 30px;
         color: white;
         opacity: 0;
-        transition: all 2s ease-in-out;
+        transition: all 0.5s ease-in-out;
     }
 
    
     .opacity{
-        transition: all 2s ease-in-out;
+        transition: all 0.5s ease-in-out;
         opacity: 1;
         text-shadow:0 0 3em black;
     }
@@ -92,7 +92,7 @@
     }
 
     .blur{
-        filter: blur(18px);
+        filter: blur(10px);
         transform: scale(1.05);
         transition: all 3s ease;
     }
@@ -165,17 +165,18 @@
         gap: 30px;
         color: white;
         opacity: 0;
-        transition: all 2s ease-in-out;
+        transition: all 1s ease-in-out;
     }
 
     .opacity{
-        transition: all 2s ease-in-out;
+        transition: all 1s ease-in-out;
         opacity: 1;
         text-shadow:0 0 3em black;
     }
     
     .Joe-background-image-content .passport-image {
-        width: 20%;
+        width: auto;
+        height: auto;
       }
 
       
@@ -193,15 +194,15 @@
       .Joe-background-image{
         filter: blur(0px);
         transform: scale(1);
-        transition: all 3s ease;
+        transition: all 0.5s ease;
         text-align: center;
         position: relative;
     }
 
     .blur{
-        filter: blur(18px);
+        filter: blur(10px);
         transform: scale(1.05);
-        transition: all 3s ease;
+        transition: all 0.5s ease;
     }
 
     

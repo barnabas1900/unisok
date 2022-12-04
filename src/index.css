@@ -242,6 +242,8 @@ h6.h6-bold{
   padding : 16px, 56px, 16px, 56px;
   gap: 10px;
   color: var(--white);
+  border: none;
+  outline: none;
 }
 
 .green-button{

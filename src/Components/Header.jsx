@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "./Header.css";
-import logo from "../images/uduLogo.png";
-import udus from "../icons/udus.png";
+import logo from "../icons/logo.svg";
 import search from "../icons/search.svg";
 import hamburger from "../icons/Hamburger.svg";
 import { Link } from "react-router-dom";
@@ -18,10 +17,8 @@ const Header = () => {
       {/*MOBILE AND TABLET HEADER */}
       <header className="mobile-tablet-header f-c">
         <Link to="/">
-          {" "}
           <div className="mobile-tablet-logo">
             <img src={logo} alt="logo" />
-            <img src={udus} alt="logo" />
           </div>
         </Link>
         <div className="mobile-tablet-search-hamburger">
@@ -38,8 +35,17 @@ const Header = () => {
       {show && (
         <div className="mobile-tablet-dropdown f-c">
           <nav className="mobile-tablet-upper-dropdown">
-            <Link to="/newspage">
-              <a href="#">News</a>
+            <Link to="/newspage" className="mobile-tablet-link">
+              <a
+                href="#"
+                className="link"
+                style={{
+                  border: "none",
+                  backgroundColor: "transparent",
+                }}
+              >
+                News
+              </a>
             </Link>
             <a href="#">Bulletin</a>
             <a href="#">Research</a>
@@ -60,7 +66,7 @@ const Header = () => {
               <a href="#">Donations</a>
               <a href="#">Family</a>
               <a href="#">Scholarships</a>
-              <a href="#">Contact Us</a>
+              <a href="#">Contact-Us</a>
             </div>
             <button className="lower-dropdown-button">COVID-19</button>
           </nav>
@@ -74,7 +80,6 @@ const Header = () => {
             <Link to="/">
               <div className="desktop-logo">
                 <img src={logo} alt="" />
-                <img src={udus} alt="" />
               </div>
             </Link>
             <nav className="upper-nav">
