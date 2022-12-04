@@ -44,8 +44,8 @@
         text-shadow:0 0 3em black;
     }
     .Joe-background-image-content .passport-image {
-      width: 35%;
-      height: 35%;
+        width: auto;
+        height: auto;
     }
 
     .Joe-content-name{
@@ -120,8 +120,8 @@
         text-shadow:0 0 3em black;
     }
     .Joe-background-image-content .passport-image {
-      width: 20%;
-      height: 20%;
+        width: auto;
+        height: auto;
     }
 
     .Joe-content-name{
