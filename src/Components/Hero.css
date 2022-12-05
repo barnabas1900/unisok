@@ -2,6 +2,7 @@
    
     .hero-image{
         position: relative;
+        background: var(--hover);
      
     }
     .hero-image img{
