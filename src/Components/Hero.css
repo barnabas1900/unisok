@@ -163,7 +163,7 @@
     
     .hero-image{
         position: relative;
-        background: red;
+        background: var(--purple);
     }
     .hero-image img{
         height: 100vh;
