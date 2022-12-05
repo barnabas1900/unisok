@@ -226,7 +226,7 @@
     .hero-image{
         position: relative;
         background: var(--hover);
-        top: -400;
+        top: -100%;
         z-index: -50;
         width: 100%;
         height: 100%;
