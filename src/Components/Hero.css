@@ -116,6 +116,7 @@
 
     .hero-image{
         position: relative;
+        background: var(--hover);
         top: -200;
         z-index: -50;
     }
@@ -170,6 +171,7 @@
     
     .hero-image{
         position: relative;
+        background: var(--hover);
         top: -200;
         z-index: -50;
        
@@ -223,7 +225,8 @@
      
     .hero-image{
         position: relative;
-        top: -200;
+        background: var(--hover);
+        top: -400;
         z-index: -50;
      
     }
