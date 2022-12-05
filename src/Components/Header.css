@@ -692,7 +692,14 @@
         display: none;
     }
 
-
+.hero-background{
+    position: absolute;
+    z-index: -60;
+    background-color: var(--hover);
+    height: 100%;
+    width: 100%;
+    top: 0;
+}
     .desktop-background{
         background: var(--gradient);
         height: 250px;

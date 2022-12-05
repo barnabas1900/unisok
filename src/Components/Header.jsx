@@ -92,6 +92,7 @@ const Header = () => {
       </header>
 
       {/*DESKTOP HEADER */}
+      <div className="hero-background"></div>
       <div className="desktop-background a-c">
         <header className="desktop-header f-c">
           <div className="desktop-logo-uppernav">
