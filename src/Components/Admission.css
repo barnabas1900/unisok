@@ -82,14 +82,20 @@
         grid-gap: 20px;
     }
     .admission-header{
-     
         text-align: center;
     }
 
     .admission-article{
-     
         cursor: pointer;
         width: 100%;
+    }
+
+    .admission-image-div{
+        background-color: var(--hover);
+    }
+
+    .admission-image-div img{
+        display: block;
     }
 
     .admission-article-content{

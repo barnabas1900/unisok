@@ -33,7 +33,9 @@ const NewsCards = () => {
               <figure>
                 <picture>
                   <a href="">
-                    <img src={admission1} alt="" className="first-image" />
+                    <div className="first-image-div">
+                      <img src={admission1} alt="" className="first-image" />
+                    </div>
                   </a>
                 </picture>
                 <div className="first-card">
@@ -55,11 +57,13 @@ const NewsCards = () => {
               <figure>
                 <picture>
                   <a href="">
-                    <img
-                      src={admission2}
-                      alt=""
-                      className="other-cards-image"
-                    />
+                    <div className="second-image-div">
+                      <img
+                        src={admission2}
+                        alt=""
+                        className="other-cards-image"
+                      />
+                    </div>
                   </a>
                 </picture>
                 <div className="newsCard-content">
@@ -85,11 +89,13 @@ const NewsCards = () => {
               <figure>
                 <picture>
                   <a href="">
-                    <img
-                      src={admission3}
-                      alt=""
-                      className="other-cards-image"
-                    />
+                    <div className="after-image-div">
+                      <img
+                        src={admission3}
+                        alt=""
+                        className="other-cards-image"
+                      />
+                    </div>
                   </a>
                 </picture>
                 <div className="newsCard-content">

@@ -106,6 +106,14 @@
         overflow: hidden;
     }
 
+    .bulletin-image-div{
+        background: var(--hover);
+    }
+
+    .bulletin-image-div img{
+        display: block;
+    }
+
         .bulletin-article:hover{
         box-shadow: var(--card-hover);
     }

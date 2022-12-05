@@ -27,7 +27,9 @@ const Academic = () => {
                 <figure>
                   <picture>
                     <a href="#">
-                      <img src={image} alt="" className="admission-image" />
+                      <div className="admission-image-div">
+                        <img src={image} alt="" className="admission-image" />
+                      </div>
                     </a>
                   </picture>
                   <div className="admission-article-content">

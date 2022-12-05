@@ -68,6 +68,22 @@
     display: none;
 }
 
+.newsCards-image-div{
+    background: var(--hover);
+}
+
+.newsCards-image-div img{
+    display: block;
+}
+
+.after-image-div, .first-image{
+    background: var(--hover);
+}
+
+.after-image-div img, .first-image img{
+    display: block;
+}
+
 .newsCards-article .newsCard-image{
     width: 100%;
     height: 100%;

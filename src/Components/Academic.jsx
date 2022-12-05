@@ -27,7 +27,9 @@ const Academic = () => {
                 <figure>
                   <picture>
                     <a href="#">
-                      <img src={image} alt="" className="academic-image" />
+                      <div className="academic-image-div">
+                        <img src={image} alt="" className="academic-image" />
+                      </div>
                     </a>
                   </picture>
                   <div className="academic-article-content">

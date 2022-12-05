@@ -14,6 +14,7 @@
     .news-header{
        text-align: center;
     }
+
     
     .mobile-news-cards{
         display: grid;
@@ -27,7 +28,10 @@
         cursor: pointer;
         box-shadow:  0px 4px 18px -8px rgba(0, 0, 0, 0.25);
         padding: 20px;
+ 
     }
+
+  
 
     .mobile-news-cards article figure{
         display: flex;
@@ -100,7 +104,18 @@
         box-shadow:  0px 4px 18px -8px rgba(0, 0, 0, 0.25);
         overflow: hidden;
     }
+    .article-image-div{
+        background: var(--purple);
+        height: auto;
+        width: auto;
+    }
 
+
+    .article-image-div img, .other-image-div img, .desktop-image-div img{
+         display: block;
+         max-width: 100%;
+         max-height: 100%;
+    }
     .mobile-news-cards article:hover{
         box-shadow: var(--card-hover);
     }
@@ -175,8 +190,6 @@
     
  
 }
-
-
 
 @media only screen and (min-width: 1024px){
 
