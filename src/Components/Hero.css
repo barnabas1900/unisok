@@ -3,6 +3,8 @@
     .hero-image{
         position: relative;
         background: var(--purple);
+        top: -200;
+        z-index: -50;
     }
     .hero-image img{
         height: 100vh;
