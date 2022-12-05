@@ -2,7 +2,7 @@
    
     .hero-image{
         position: relative;
-        background: var(--hover);
+      
      
     }
     .hero-image img{
@@ -163,6 +163,7 @@
     
     .hero-image{
         position: relative;
+        background: red;
     }
     .hero-image img{
         height: 100vh;
