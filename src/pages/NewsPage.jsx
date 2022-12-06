@@ -1,12 +1,14 @@
 import React from "react";
 import Footer from "../Components/Footer";
-import Header from "../Components/Header";
+import NewsPageHeader from "../Components/NewsPageHeader";
 import NewsCards from "../Components/NewsCards";
+import NewsHeader from "../Components/NewsHeader";
 
 const NewsPage = () => {
   return (
     <div>
-      <Header />
+      <NewsPageHeader />
+      <NewsHeader />
       <NewsCards />
       <Footer />
     </div>

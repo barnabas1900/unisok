@@ -20,12 +20,6 @@ const NewsCards = () => {
   return (
     <>
       <div className="newsCards-container">
-        <div className="newsCards-header a-c">
-          <h2>NEWS & EVENTS</h2>
-          <h6 className="medium">
-            Stories about people, research and innovation across the School
-          </h6>
-        </div>
         <div className="top-cards f-c">
           {/*1*/}
           <article>

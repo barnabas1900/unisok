@@ -8,6 +8,7 @@
         height: 100vh;
         object-fit: cover;
         filter: brightness(50%);
+        display: block;
     }
     
   .hero-two-image-content{
@@ -38,11 +39,12 @@
         height: 100vh;
         object-fit: cover;
         filter: brightness(50%);
+        display: block;
     }
     
   .hero-two-image-content{
     position: absolute;
-    top: 30%;
+    top: 35%;
     bottom: 30%;
     text-align: center;
     color: white;
@@ -63,14 +65,21 @@
   .hero-two-div{
     position: relative;
   }
+
+  .hero-two-image-div{
+    position: relative;
+    width: 100%;
+    height: 80%;
+  }
     .hero-two-image-div img{
         width: 100%;
-        height: 100vh;
+        height: calc(100vh + 50px);
         object-fit: cover;
         filter: brightness(50%);
         position: relative;
         top: -270px;
         z-index: -1;
+        display: block;
     }
     
   .hero-two-image-content{

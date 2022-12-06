@@ -144,9 +144,7 @@ figure, picture, .newsCards-image-div{
         }
 }
 
-@media only screen and (min-width: 1024px){
-
-    
+@media only screen and (min-width: 1024px){  
 .newsCards-container{
     padding-top: 100px;
     padding-left: 20px;
@@ -155,22 +153,7 @@ figure, picture, .newsCards-image-div{
     display: flex;
     flex-direction: column;
     gap: 50px;
-}
-.newsCards-header{
-    text-align: center;
-    background-color: black;
-    color: white;
-    height: 500px;
-    position: absolute;
-    top: 75px;
-    z-index: -10;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    margin-left: -20px;
- 
+    margin-top: -200px;
 }
 
 /* TOP THREE CARDS*/
@@ -180,7 +163,6 @@ figure, picture, .newsCards-image-div{
     grid-template-rows: repeat(1, 1fr);
     grid-gap: 20px;
     margin-bottom: -30px;
-    margin-top: 300px;
 }
 
 /* first CARD*/
