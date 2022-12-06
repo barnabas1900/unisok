@@ -18,76 +18,81 @@ const Header = () => {
   return (
     <>
       {/*MOBILE AND TABLET HEADER */}
-      <header className="mobile-tablet-header f-c">
-        <Link to="/">
-          <div className="mobile-tablet-logo">
-            <img src={logo} alt="logo" />
-          </div>
-        </Link>
+      <div className="mobile-tablet-header-container">
+        <header className="mobile-tablet-header f-c">
+          <Link to="/">
+            <div className="mobile-tablet-logo">
+              <img src={logo} alt="logo" />
+            </div>
+          </Link>
 
-        <nav ref={navRef} className="mobile-tablet-search-close">
-          <div className="search-close-div">
-            <div className="mobile-tablet-search-div">
-              <img src={search} alt="search" className="search-svg" />
-              <p>Search</p>
-            </div>
-            <div className="mobile-tablet-close-div" onClick={handleClick}>
-              <img src={closeButton} alt="close" />
-              <p>Close</p>
-            </div>
-          </div>
-          <div className="mobile-tablet-dropdown f-c">
-            <nav className="mobile-tablet-upper-dropdown">
-              <Link to="/newspage" className="mobile-tablet-link">
-                <a
-                  href="#"
-                  className="link"
-                  style={{
-                    border: "none",
-                    backgroundColor: "transparent",
-                  }}
-                >
-                  News
-                </a>
-              </Link>
-              <a href="#">Bulletin</a>
-              <a href="#">Research</a>
-              <a href="#">Journals</a>
-              <a href="#">Academics</a>
-              <a href="#">Admissions</a>
-              <a href="#">TetFund</a>
-              <a href="#">About</a>
-              <a href="#">Administration</a>
-              <a href="#">OER</a>
-              <a href="#">Alumni</a>
-              <a href="#">UDUS LMS</a>
-            </nav>
-            <nav className="mobile-tablet-lower-dropdown">
-              <p>For More Information:</p>
-              <div className="lower-dropdown-nav">
-                <a href="#">UDUS SIS</a>
-                <a href="#">Donations</a>
-                <a href="#">Family</a>
-                <a href="#">Scholarships</a>
-                <a href="#">Contact-Us</a>
+          <nav ref={navRef} className="mobile-tablet-search-close">
+            <div className="search-close-div">
+              <div className="mobile-tablet-search-div">
+                <img src={search} alt="search" className="search-svg" />
+                <p>Search</p>
               </div>
-              <button className="lower-dropdown-button">COVID-19</button>
-            </nav>
-          </div>
-        </nav>
-        {show && (
-          <div className="search-hamburger-div">
-            <div className="mobile-tablet-search-two-div">
-              <img src={search} alt="search" className="search2-svg" />
-              <p>Search</p>
+              <div className="mobile-tablet-close-div" onClick={handleClick}>
+                <img src={closeButton} alt="close" />
+                <p>Close</p>
+              </div>
             </div>
-            <div className="mobile-tablet-hamburger-div" onClick={handleClick}>
-              <img src={Hamburger} alt="hamburger" />
-              <p>Menu</p>
+            <div className="mobile-tablet-dropdown f-c">
+              <nav className="mobile-tablet-upper-dropdown">
+                <Link to="/newspage" className="mobile-tablet-link">
+                  <a
+                    href="#"
+                    className="link"
+                    style={{
+                      border: "none",
+                      backgroundColor: "transparent",
+                    }}
+                  >
+                    News
+                  </a>
+                </Link>
+                <a href="#">Bulletin</a>
+                <a href="#">Research</a>
+                <a href="#">Journals</a>
+                <a href="#">Academics</a>
+                <a href="#">Admissions</a>
+                <a href="#">TetFund</a>
+                <a href="#">About</a>
+                <a href="#">Administration</a>
+                <a href="#">OER</a>
+                <a href="#">Alumni</a>
+                <a href="#">UDUS LMS</a>
+              </nav>
+              <nav className="mobile-tablet-lower-dropdown">
+                <p>For More Information:</p>
+                <div className="lower-dropdown-nav">
+                  <a href="#">UDUS SIS</a>
+                  <a href="#">Donations</a>
+                  <a href="#">Family</a>
+                  <a href="#">Scholarships</a>
+                  <a href="#">Contact-Us</a>
+                </div>
+                <button className="lower-dropdown-button">COVID-19</button>
+              </nav>
             </div>
-          </div>
-        )}
-      </header>
+          </nav>
+          {show && (
+            <div className="search-hamburger-div">
+              <div className="mobile-tablet-search-two-div">
+                <img src={search} alt="search" className="search2-svg" />
+                <p>Search</p>
+              </div>
+              <div
+                className="mobile-tablet-hamburger-div"
+                onClick={handleClick}
+              >
+                <img src={Hamburger} alt="hamburger" />
+                <p>Menu</p>
+              </div>
+            </div>
+          )}
+        </header>
+      </div>
 
       {/*DESKTOP HEADER */}
       <div className="hero-background"></div>
