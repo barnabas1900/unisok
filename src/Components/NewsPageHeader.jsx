@@ -17,87 +17,88 @@ const NewsPageHeader = () => {
 
   return (
     <>
-      {/*MOBILE AND TABLET HEADER */}
-      <header className="mobile-tablet-header-newspage f-c">
-        <Link to="/">
-          <div className="mobile-tablet-logo-newspage">
-            <img src={logo} alt="logo" />
-          </div>
-        </Link>
-        <nav ref={navRef} className="mobile-tablet-search-close-newspage">
-          <nav className="mobile-tablet-navbar-newspage">
-            <div className="search-close-div-newspage">
-              <div className="mobile-tablet-search-div-newspage">
-                <img src={search} alt="search" className="search-svg" />
+      <div className="mobile-tablet-header-container-newspage">
+        {/*MOBILE AND TABLET HEADER */}
+        <header className="mobile-tablet-header-newspage f-c">
+          <Link to="/">
+            <div className="mobile-tablet-logo-newspage">
+              <img src={logo} alt="logo" />
+            </div>
+          </Link>
+
+          {show && (
+            <div className="search-hamburger-div-newspage">
+              <div className="mobile-tablet-search-two-div-newspage">
+                <img src={search} alt="search" className="search2-svg" />
                 <p>Search</p>
               </div>
               <div
-                className="mobile-tablet-close-div-newspage"
+                className="mobile-tablet-hamburger-div-newspage"
                 onClick={handleClick}
               >
-                <img src={closeButton} alt="close" />
-                <p>Close</p>
+                <img src={Hamburger} alt="hamburger" />
+                <p>Menu</p>
               </div>
             </div>
-
-            <div className="mobile-tablet-dropdown-newspage f-c">
-              <nav className="mobile-tablet-upper-dropdown-newspage">
-                <Link to="/newspage" className="mobile-tablet-link-newspage">
-                  <a
-                    href="#"
-                    className="link"
-                    style={{
-                      border: "none",
-                      backgroundColor: "transparent",
-                    }}
-                  >
-                    News
-                  </a>
-                </Link>
-                <a href="#">Bulletin</a>
-                <a href="#">Research</a>
-                <a href="#">Journals</a>
-                <a href="#">Academics</a>
-                <a href="#">Admissions</a>
-                <a href="#">TetFund</a>
-                <a href="#">About</a>
-                <a href="#">Administration</a>
-                <a href="#">OER</a>
-                <a href="#">Alumni</a>
-                <a href="#">UDUS LMS</a>
-              </nav>
-              <nav className="mobile-tablet-lower-dropdown-newspage">
-                <p>For More Information:</p>
-                <div className="lower-dropdown-nav-newspage">
-                  <a href="#">UDUS SIS</a>
-                  <a href="#">Donations</a>
-                  <a href="#">Family</a>
-                  <a href="#">Scholarships</a>
-                  <a href="#">Contact-Us</a>
-                </div>
-                <button className="lower-dropdown-button-newspage">
-                  COVID-19
-                </button>
-              </nav>
-            </div>
-          </nav>
-        </nav>
-        {show && (
-          <div className="search-hamburger-div-newspage">
-            <div className="mobile-tablet-searchtwo-div-newspage">
-              <img src={search} alt="search" className="search2-svg" />
+          )}
+        </header>
+        <nav ref={navRef} className="mobile-tablet-search-close-newspage">
+          <div className="search-close-div-newspage">
+            <div className="mobile-tablet-search-div-newspage">
+              <img src={search} alt="search" className="search-svg" />
               <p>Search</p>
             </div>
             <div
-              className="mobile-tablet-hambuger-div-newspage"
+              className="mobile-tablet-close-div-newspage"
               onClick={handleClick}
             >
-              <img src={Hamburger} alt="hamburger" />
-              <p>Menu</p>
+              <img src={closeButton} alt="close" />
+              <p>Close</p>
             </div>
           </div>
-        )}
-      </header>
+
+          <div className="mobile-tablet-dropdown-newspage f-c">
+            <nav className="mobile-tablet-upper-dropdown-newspage">
+              <Link to="/newspage" className="mobile-tablet-link-newspage">
+                <a
+                  href="#"
+                  className="link"
+                  style={{
+                    border: "none",
+                    backgroundColor: "transparent",
+                  }}
+                >
+                  News
+                </a>
+              </Link>
+              <a href="#">Bulletin</a>
+              <a href="#">Research</a>
+              <a href="#">Journals</a>
+              <a href="#">Academics</a>
+              <a href="#">Admissions</a>
+              <a href="#">TetFund</a>
+              <a href="#">About</a>
+              <a href="#">Administration</a>
+              <a href="#">OER</a>
+              <a href="#">Alumni</a>
+              <a href="#">UDUS LMS</a>
+            </nav>
+            <nav className="mobile-tablet-lower-dropdown-newspage">
+              <p>For More Information:</p>
+              <div className="lower-dropdown-nav-newspage">
+                <a href="#">UDUS SIS</a>
+                <a href="#">Donations</a>
+                <a href="#">Family</a>
+                <a href="#">Scholarships</a>
+                <a href="#">Contact-Us</a>
+              </div>
+              <button className="lower-dropdown-button-newspage">
+                COVID-19
+              </button>
+            </nav>
+          </div>
+        </nav>
+      </div>
 
       {/*DESKTOP HEADER */}
       <div className="hero-background-two-newspage"></div>
