@@ -827,24 +827,32 @@
         display: flex;
         justify-content: space-between;
         box-sizing: border-box;
-        padding-left: 0;
-        padding-right: 0;
-     
+ 
     }
     .desktop-header-background-newspage.upper-scrolled-newspage .desktop-logo-uppernav-newspage{
        display: flex;
        align-items: center;
        justify-content: space-between;
-
+       margin-top: -16px;
+       margin-bottom: -15px;
     }
     .desktop-header-background-newspage.upper-scrolled-newspage .upper-nav-newspage{
-      gap: 30px;
+  
+      gap: 10px;
     }
-    .desktop-header-background-newspage.upper-scrolled-newspage .upper-nav-newspage a{
-      
-    }
-    .desktop-header-background-newspage.upper-scrolled-newspage .upper-nav-newspage a:not(:last-child):hover{
 
+    .desktop-header-background-newspage.upper-scrolled-newspage .a-div-newspage{
+  
+        margin-right: 10px;
+      }
+    .desktop-header-background-newspage.upper-scrolled-newspage .upper-nav-newspage a{
+      padding-top: 30px;
+      padding-bottom: 30px;
+      padding-left: 10px;
+      padding-right: 10px;
+      box-sizing: border-box;
+    }
+    .desktop-header-background-newspage.upper-scrolled-newspage .upper-nav-newspage a:hover{
         background-color: var(--hover);
     }
     .desktop-header-background-newspage.upper-scrolled-newspage .upper-nav-newspage a:not(:last-child)::before{
@@ -860,7 +868,7 @@
 
     }
 
-    .desktop-header-background-newspage.upper-scrolled-newspage .search-div-newspage{
+    .desktop-header-background.upper-scrolled .search-div{
     
     }
     /*SCROLLED EFFECTS*/
@@ -869,6 +877,9 @@
         display: block;
         position: fixed;
         z-index: 100;
+        background: var(--gradient);
+        height: 250px;
+        margin: auto auto;
     }
     .hero-background-two-newspage {
         position: relative;
@@ -877,26 +888,21 @@
         height: 60%;
         width: 100%;
     }
-    .desktop-background-newspage {
-        background: var(--gradient);
-        height: 250px;
-    }
     .desktop-background-newspage.transparent{
         background: none;
     }
     .desktop-header-background-newspage{
         background-color: none;
     }
-    
     .desktop-header-newspage {
         display: flex;
         flex-direction: column;
         gap: 30px;
         padding-top: 15px;
         width: 100vw;
+        padding-left: 20px;
+        padding-right: 20px;
     }
-
-
     .desktop-logo-newspage img {
         width: 134.47px;
         height: 48px;
@@ -912,6 +918,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+
     }
 
     .upper-nav-newspage {
@@ -925,7 +932,7 @@
        
     }
 
-    .upper-nav-newspage a:not(:last-child)::before {
+    .upper-nav-newspage a::before {
         content: "";
         background-color: white;
         border-radius: 50px;
@@ -937,7 +944,7 @@
         transition: all 0.3s ease-in;
     }
 
-    .upper-nav-newspage a:not(:last-child):hover::before {
+    .upper-nav-newspage a:hover::before {
 
         transform: scaleX(1);
         transition: all 0.3s ease-in;
@@ -998,6 +1005,8 @@
         transition: all 0.3s ease-in;
     }
 
+
+
     .lower-nav-newspage a {
         font-weight: 500;
         font-size: 24px;
@@ -1022,4 +1031,10 @@
         transform: scaleX(1);
         transition: all 0.3s ease-in;
     }
+
+    .search-div-newspage{
+        cursor: pointer;
+    }
+
+ 
 }

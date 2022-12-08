@@ -229,16 +229,7 @@
  
     }
     
-    .hero-image img{
-        height: 100vh;
-        width: 100%;
-        object-fit: cover;
-        filter: brightness(50%);
-        position: relative;
-        top: -250px;
-        z-index: -1;
-    
-    }
+
 
     .image-content{
         top: 47%;

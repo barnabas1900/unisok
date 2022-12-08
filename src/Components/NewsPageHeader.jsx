@@ -133,16 +133,18 @@ const Header = () => {
                 </div>
               </Link>
               <nav className="upper-nav-newspage">
-                <a href="#">Administration</a>
-                <a href="#">UDUS Mail</a>
-                <a href="#">Alumni</a>
-                <a href="#">OER</a>
-                <a href="#">UDUS LMS</a>
-                <a href="#">UDUS SIS</a>
-                <a href="#">Donations</a>
+                <div className="upper-nav-newspage a-div-newspage">
+                  <a href="#">Administration</a>
+                  <a href="#">UDUS Mail</a>
+                  <a href="#">Alumni</a>
+                  <a href="#">OER</a>
+                  <a href="#">UDUS LMS</a>
+                  <a href="#">UDUS SIS</a>
+                  <a href="#">Donations</a>
+                </div>
                 <div className="search-div-newspage">
                   <img src={search} alt="" />
-                  <a href="#">Search</a>
+                  <p className="white">Search</p>
                 </div>
               </nav>
             </div>

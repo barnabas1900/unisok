@@ -128,23 +128,23 @@ const Header = () => {
                 </div>
               </Link>
               <nav className="upper-nav">
-                <a href="#">Administration</a>
-                <a href="#">UDUS Mail</a>
-                <a href="#">Alumni</a>
-                <a href="#">OER</a>
-                <a href="#">UDUS LMS</a>
-                <a href="#">UDUS SIS</a>
-                <a href="#">Donations</a>
+                <div className="upper-nav a-div">
+                  <a href="#">Administration</a>
+                  <a href="#">UDUS Mail</a>
+                  <a href="#">Alumni</a>
+                  <a href="#">OER</a>
+                  <a href="#">UDUS LMS</a>
+                  <a href="#">UDUS SIS</a>
+                  <a href="#">Donations</a>
+                </div>
                 <div className="search-div">
                   <img src={search} alt="" />
-                  <a href="#">Search</a>
+                  <p className="white">Search</p>
                 </div>
               </nav>
             </div>
             <nav className={bgColor ? "lower-nav lower-scrolled" : "lower-nav"}>
-              <Link to="/newspage">
-                <a href="#">News</a>
-              </Link>
+              <Link to="/newspage">News</Link>
               <a href="#">Bulletin</a>
               <a href="#">Research</a>
               <a href="#">Journals</a>
