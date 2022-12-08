@@ -27,9 +27,8 @@
     .article-article{
         display: grid;
         grid-gap: 30px;
-        margin-top: -200px;
         margin-bottom: 50px;
-        padding-left: 20%;
-        padding-right: 20%;
+        padding-left: 10%;
+        padding-right: 10%;
     }
 }
