@@ -197,10 +197,15 @@
         display: none;
     }
 
+    .tablet-desktop-cards article{
+        background-color: var(--hover);
+    }
+
     .news-card-content{
         background-color: white;
         display: flex;
         flex-direction: column;
+        height: fit-content;
         gap: 20px;
         padding-top: 20px;
         height: 100%;
@@ -209,7 +214,6 @@
     .news-container{
         background-color: var(--spring-wood);
         padding: 50px 20px;
-        margin-top: -290px;
         padding-top: 100px;
     }
 

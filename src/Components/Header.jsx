@@ -8,6 +8,15 @@ import Hamburger from "../icons/Hamburger.svg";
 
 const Header = () => {
   const [show, setShow] = useState({ display: "none" });
+  const [bgColor, setBgColor] = useState(false);
+
+  const changeBgColor = () => {
+    {
+      window.scrollY >= 392 ? setBgColor(true) : setBgColor(false);
+    }
+  };
+
+  window.addEventListener("scroll", changeBgColor);
   const navRef = useRef();
 
   const handleClick = () => {
@@ -97,41 +106,55 @@ const Header = () => {
 
       {/*DESKTOP HEADER */}
       <div className="hero-background"></div>
-      <div className="desktop-background a-c">
-        <header className="desktop-header f-c">
-          <div className="desktop-logo-uppernav">
-            <Link to="/">
-              <div className="desktop-logo">
-                <img src={logo} alt="" />
-              </div>
-            </Link>
-            <nav className="upper-nav">
-              <a href="#">Administration</a>
-              <a href="#">UDUS Mail</a>
-              <a href="#">Alumni</a>
-              <a href="#">OER</a>
-              <a href="#">UDUS LMS</a>
-              <a href="#">UDUS SIS</a>
-              <a href="#">Donations</a>
-              <div className="search-div">
-                <img src={search} alt="" />
-                <a href="#">Search</a>
-              </div>
+      <div
+        className={
+          bgColor
+            ? "desktop-background a-c transparent"
+            : "desktop-background a-c"
+        }
+      >
+        <div
+          className={
+            bgColor
+              ? "desktop-header-background a-c upper-scrolled"
+              : "desktop-header-background a-c"
+          }
+        >
+          <header className="desktop-header f-c">
+            <div className="desktop-logo-uppernav">
+              <Link to="/">
+                <div className="desktop-logo">
+                  <img src={logo} alt="" />
+                </div>
+              </Link>
+              <nav className="upper-nav">
+                <a href="#">Administration</a>
+                <a href="#">UDUS Mail</a>
+                <a href="#">Alumni</a>
+                <a href="#">OER</a>
+                <a href="#">UDUS LMS</a>
+                <a href="#">UDUS SIS</a>
+                <a href="#">Donations</a>
+                <div className="search-div">
+                  <img src={search} alt="" />
+                  <a href="#">Search</a>
+                </div>
+              </nav>
+            </div>
+            <nav className={bgColor ? "lower-nav lower-scrolled" : "lower-nav"}>
+              <Link to="/newspage">
+                <a href="#">News</a>
+              </Link>
+              <a href="#">Bulletin</a>
+              <a href="#">Research</a>
+              <a href="#">Journals</a>
+              <a href="#">Academics</a>
+              <a href="#">Admissions</a>
+              <a href="#">TetFund</a>
+              <a href="#">About</a>
             </nav>
-          </div>
-          <nav className="lower-nav">
-            <Link to="/newspage">
-              <a href="#">News</a>
-            </Link>
-            <a href="#">Bulletin</a>
-            <a href="#">Research</a>
-            <a href="#">Journals</a>
-            <a href="#">Academics</a>
-            <a href="#">Admissions</a>
-            <a href="#">TetFund</a>
-            <a href="#">About</a>
-          </nav>
-        </header>
+          </header>
+        </div>
       </div>
     </>
   );

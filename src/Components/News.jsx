@@ -42,7 +42,9 @@ const News = () => {
                     <p className="bold">{logoText}</p>
                   </div>
                   <p className="bolder-dark">{title}</p>
-                  <p className="mobile-date small">Friday, March 25th, 2022</p>
+                  <p className="mobile-date small dark">
+                    Friday, March 25th, 2022
+                  </p>
                 </figure>
               </article>
             );
@@ -96,7 +98,7 @@ const News = () => {
                     The 3rd Edition of UDUS News Bulletin is out and can be
                     accessed
                   </p>
-                  <p className="tablet-desktop-date small">
+                  <p className="tablet-desktop-date small dark">
                     Friday, March 25th, 2022
                   </p>
                 </div>
@@ -123,7 +125,7 @@ const News = () => {
                     The 3rd Edition of UDUS News Bulletin is out and can be
                     accessed
                   </p>
-                  <p className="tablet-desktop-date small">
+                  <p className="tablet-desktop-date small dark">
                     Friday, March 25th, 2022
                   </p>
                 </div>
@@ -150,7 +152,7 @@ const News = () => {
                     The 3rd Edition of UDUS News Bulletin is out and can be
                     accessed
                   </p>
-                  <p className="tablet-desktop-date small">
+                  <p className="tablet-desktop-date small dark">
                     Friday, March 25th, 2022
                   </p>
                 </div>
@@ -178,7 +180,7 @@ const News = () => {
                     The 3rd Edition of UDUS News Bulletin is out and can be
                     accessed
                   </p>
-                  <p className="tablet-desktop-date small">
+                  <p className="tablet-desktop-date small dark">
                     Friday, March 25th, 2022
                   </p>
                 </div>

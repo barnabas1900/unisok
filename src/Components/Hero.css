@@ -66,7 +66,7 @@
     }
     .hero-image img{
         height: 100vh;
-        width: 100%;
+        width: 100vw;
         object-fit: cover;
         filter: brightness(50%);
         display: block;
@@ -173,7 +173,6 @@
     
     .hero-image{
         position: relative;
-        background: var(--hover);
         top: -200;
         z-index: -50;
        

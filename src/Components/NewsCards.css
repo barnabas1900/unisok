@@ -102,6 +102,12 @@ grid-gap: 20px;
     overflow: hidden;
 }
 
+.grid-card-logo{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
 .grid-card-content{
     padding: 20px;
     display: flex;

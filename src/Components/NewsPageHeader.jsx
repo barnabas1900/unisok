@@ -6,8 +6,17 @@ import { Link } from "react-router-dom";
 import closeButton from "../icons/close-btn.svg";
 import Hamburger from "../icons/Hamburger.svg";
 
-const NewsPageHeader = () => {
+const Header = () => {
   const [show, setShow] = useState({ display: "none" });
+  const [bgColor, setBgColor] = useState(false);
+
+  const changeBgColor = () => {
+    {
+      window.scrollY >= 392 ? setBgColor(true) : setBgColor(false);
+    }
+  };
+
+  window.addEventListener("scroll", changeBgColor);
   const navRef = useRef();
 
   const handleClick = () => {
@@ -17,8 +26,8 @@ const NewsPageHeader = () => {
 
   return (
     <>
+      {/*MOBILE AND TABLET HEADER */}
       <div className="mobile-tablet-header-container-newspage">
-        {/*MOBILE AND TABLET HEADER */}
         <header className="mobile-tablet-header-newspage f-c">
           <Link to="/">
             <div className="mobile-tablet-logo-newspage">
@@ -42,6 +51,7 @@ const NewsPageHeader = () => {
             </div>
           )}
         </header>
+
         <nav ref={navRef} className="mobile-tablet-search-close-newspage">
           <div className="search-close-div-newspage">
             <div className="mobile-tablet-search-div-newspage">
@@ -56,13 +66,12 @@ const NewsPageHeader = () => {
               <p>Close</p>
             </div>
           </div>
-
           <div className="mobile-tablet-dropdown-newspage f-c">
             <nav className="mobile-tablet-upper-dropdown-newspage">
               <Link to="/newspage" className="mobile-tablet-link-newspage">
                 <a
                   href="#"
-                  className="link"
+                  className="news-link"
                   style={{
                     border: "none",
                     backgroundColor: "transparent",
@@ -101,45 +110,65 @@ const NewsPageHeader = () => {
       </div>
 
       {/*DESKTOP HEADER */}
-      <div className="hero-background-two-newspage"></div>
-      <div className="desktop-background-newspage a-c">
-        <header className="desktop-header-newspage f-c">
-          <div className="desktop-logo-uppernav-newspage">
-            <Link to="/">
-              <div className="desktop-logo-newspage">
-                <img src={logo} alt="" />
-              </div>
-            </Link>
-            <nav className="upper-nav-newspage">
-              <a href="#">Administration</a>
-              <a href="#">UDUS Mail</a>
-              <a href="#">Alumni</a>
-              <a href="#">OER</a>
-              <a href="#">UDUS LMS</a>
-              <a href="#">UDUS SIS</a>
-              <a href="#">Donations</a>
-              <div className="search-div-newspage">
-                <img src={search} alt="" />
-                <a href="#">Search</a>
-              </div>
+      <div className="hero-background-newspage"></div>
+      <div
+        className={
+          bgColor
+            ? "desktop-background-newspage a-c transparent"
+            : "desktop-background-newspage a-c"
+        }
+      >
+        <div
+          className={
+            bgColor
+              ? "desktop-header-background-newspage a-c upper-scrolled-newspage"
+              : "desktop-header-background-newspage a-c"
+          }
+        >
+          <header className="desktop-header-newspage f-c">
+            <div className="desktop-logo-uppernav-newspage">
+              <Link to="/">
+                <div className="desktop-logo-newspage">
+                  <img src={logo} alt="" />
+                </div>
+              </Link>
+              <nav className="upper-nav-newspage">
+                <a href="#">Administration</a>
+                <a href="#">UDUS Mail</a>
+                <a href="#">Alumni</a>
+                <a href="#">OER</a>
+                <a href="#">UDUS LMS</a>
+                <a href="#">UDUS SIS</a>
+                <a href="#">Donations</a>
+                <div className="search-div-newspage">
+                  <img src={search} alt="" />
+                  <a href="#">Search</a>
+                </div>
+              </nav>
+            </div>
+            <nav
+              className={
+                bgColor
+                  ? "lower-nav-newspage lower-scrolled-newspage"
+                  : "lower-nav-newspage"
+              }
+            >
+              <Link to="/newspage">
+                <a href="#">News</a>
+              </Link>
+              <a href="#">Bulletin</a>
+              <a href="#">Research</a>
+              <a href="#">Journals</a>
+              <a href="#">Academics</a>
+              <a href="#">Admissions</a>
+              <a href="#">TetFund</a>
+              <a href="#">About</a>
             </nav>
-          </div>
-          <nav className="lower-nav-newspage">
-            <Link to="/newspage">
-              <a href="#">News</a>
-            </Link>
-            <a href="#">Bulletin</a>
-            <a href="#">Research</a>
-            <a href="#">Journals</a>
-            <a href="#">Academics</a>
-            <a href="#">Admissions</a>
-            <a href="#">TetFund</a>
-            <a href="#">About</a>
-          </nav>
-        </header>
+          </header>
+        </div>
       </div>
     </>
   );
 };
 
-export default NewsPageHeader;
+export default Header;

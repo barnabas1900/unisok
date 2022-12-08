@@ -2,15 +2,11 @@ import React, { useState } from "react";
 import "./NewsCards.css";
 import data from "../data/newscards";
 import { Link } from "react-router-dom";
-import admission1 from "../images/admission-image1.jpg";
-import admission2 from "../images/admission-image2.jpg";
-import admission3 from "../images/admission-image3.jpg";
-import whiteWorld from "../icons/world-white.svg";
 import worldGreen from "../icons/world-green.svg";
 
 const NewsCards = () => {
   const [cards, setCards] = useState(data);
-  const [noOfCards, setNoOfCards] = useState(4);
+  const [noOfCards, setNoOfCards] = useState(12);
 
   const loadMore = () => {
     setNoOfCards(noOfCards + 4);
@@ -20,98 +16,9 @@ const NewsCards = () => {
   return (
     <>
       <div className="newsCards-container">
-        <div className="top-cards f-c">
-          {/*1*/}
-          <article>
-            <Link to="/newsarticle">
-              <figure>
-                <picture>
-                  <a href="">
-                    <div className="first-image-div">
-                      <img src={admission1} alt="" className="first-image" />
-                    </div>
-                  </a>
-                </picture>
-                <div className="first-card">
-                  <div className="first-card-tablet-desktop-logo">
-                    <img src={whiteWorld} alt="" />
-                    <p className="white bold">Events</p>
-                  </div>
-                  <h6 className="h6-bold">
-                    The 3rd Edition of UDUS News Bulletin is out and can be
-                    accessed
-                  </h6>
-                </div>
-              </figure>
-            </Link>
-          </article>
-          {/*2*/}
-          <article>
-            <Link to="/newsarticle">
-              <figure>
-                <picture>
-                  <a href="">
-                    <div className="second-image-div">
-                      <img
-                        src={admission2}
-                        alt=""
-                        className="other-cards-image"
-                      />
-                    </div>
-                  </a>
-                </picture>
-                <div className="newsCard-content">
-                  <div className="tablet-desktop-logo">
-                    <img src={worldGreen} alt="" />
-                    <p>Events</p>
-                  </div>
-                  <h6 className="h6-bold dark">
-                    The 3rd Edition of UDUS News Bulletin is out and can be
-                    accessed
-                  </h6>
-                  <p className="tablet-desktop-date dark small">
-                    Friday, March 25th, 2022
-                  </p>
-                </div>
-              </figure>
-            </Link>
-          </article>
-          {/*3*/}
-          <article>
-            <Link to="/newsarticle">
-              {" "}
-              <figure>
-                <picture>
-                  <a href="">
-                    <div className="after-image-div">
-                      <img
-                        src={admission3}
-                        alt=""
-                        className="other-cards-image"
-                      />
-                    </div>
-                  </a>
-                </picture>
-                <div className="newsCard-content">
-                  <div className="tablet-desktop-logo">
-                    <img src={worldGreen} alt="" />
-                    <p>Events</p>
-                  </div>
-                  <h6 className="h6-bold dark">
-                    The 3rd Edition of UDUS News Bulletin is out and can be
-                    accessed
-                  </h6>
-                  <p className="tablet-desktop-date dark small">
-                    Friday, March 25th, 2022
-                  </p>
-                </div>
-              </figure>
-            </Link>
-          </article>
-        </div>
         <div className="grid-cards f-c">
           {sliced.map((card, index) => {
-            const { logo, logoText, title, image, date } = card;
+            const { logoText, title, image, date } = card;
 
             return (
               <article key={index} className="newsCards-article">
@@ -127,7 +34,7 @@ const NewsCards = () => {
                     </picture>
                     <div className="grid-card-content">
                       <div className="grid-card-logo">
-                        <img src={logo} alt="" />
+                        <img src={worldGreen} alt="" />
                         <p className="bold logotext">{logoText}</p>
                       </div>
                       <h6 className="medium dark">{title}</h6>
