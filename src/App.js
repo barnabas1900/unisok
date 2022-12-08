@@ -1,7 +1,7 @@
 import Home from "./pages/Home";
 import NewsPage from "../src/pages/NewsPage";
 import NewsArticle from "../src/pages/NewsArticle";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import ErrorPage from "../src/Components/ErrorPage";
 import { useState } from "react";
 
