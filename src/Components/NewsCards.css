@@ -1,5 +1,5 @@
 @media only screen and (max-width: 575px){
-    .top-cards, .logotext,   .newsCard-image{
+    .top-cards,   .newsCard-image{
         display: none;
     }
     .newsCards-container{
@@ -31,6 +31,11 @@
         display: flex;
         flex-direction: column;
         gap: 20px;
+    }
+
+    .grid-card-logo{
+        display: flex;
+        gap: 5px;
     }
 
     .newsCards-article:hover{

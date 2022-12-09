@@ -35,7 +35,7 @@ const NewsCards = () => {
                     <div className="grid-card-content">
                       <div className="grid-card-logo">
                         <img src={worldGreen} alt="" />
-                        <p className="bold logotext">{logoText}</p>
+                        <p className="bold logotext dark">{logoText}</p>
                       </div>
                       <h6 className="medium dark">{title}</h6>
                       <p className="small dark">{date}</p>
